@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+	<title>personal</title>
+
+
+	<style type="text/css">
+
+		body,h2,ol,ul,li{margin:0; padding: 0;}
+
+
+
+		html{font-family: 'Noto Sans KR', sans-serif;}
+
+	
+		nav { background: black; height: 80px; width: 1536px; position: fixed; }
+
+		nav .logo{height: 80px; line-height: 80px; width: 200px; background: black; float: left;
+			text-align: center;}
+
+		footer { margin-left: -50px; height: 150px; margin-top: 0px; }
+
+		nav ul{ height: 80px; background: black; float: right;}
+
+		nav ul li{list-style-type:none;
+			list-style-position: inside;
+			padding-left: 0px;
+			padding-right:100px;
+			float: left;
+			background: black;
+			color:white;
+			text-align: center;
+			line-height: 80px;}
+		
+		nav ul li a{display: block;
+			text-decoration: none;
+			font-weight: 500;
+			font-size: 23px;
+			color: white;}
+
+		nav div a{display: block;
+			text-decoration: none;
+			font-weight: 500;
+			font-size: 23px;
+			color: white;
+			padding-left: 70px;
+			}
+
+		
+
+		.logosize { height: 50px; margin-top: 12px; }
+
+		.hall {height: 400px; background: black;   margin: auto; padding-bottom: 150px;}
+
+		.row3 {display: flex; margin: auto; padding-left: 70px; width: 1400px; 
+			margin-bottom:10px}
+
+		.relative{position: relative;}
+
+		.align-left {text-align: left;}
+		.align-center {text-align: center;}
+		.align-right {text-align: right;}
+
+		.col-2{width: 290px; margin: 0px 5px;}
+		.col-3{width: 390px; margin: 0px 5px;}
+		.col-4{width: 590px; margin: 0px 5px;}
+		.col-5{width: 1190px; margin: 0px 5px;}
+
+		.margin_right{margin-right: 25px;}
+
+		.bg-footer {background: url('m-footer.jpg');
+					background-size: contain;
+					background-repeat: no-repeat;}
+
+		.margin_top{margin-top: 30px;}
+
+		.white {color: white; text-align: center; padding-left: 550px; z-index:0;}
+
+		.key { position: fixed; margin: auto; }
+		.key_size { width:400px; }
+
+		.linear {
+			animation: timing-function : linear;}
+
+		.rotate { animation: rotation 3s linear infinite; }
+	
+
+		@keyframes rotation { from {transform: rotate(0deg);} to {transform: rotate(360deg);} }
+
+		.body{height: 200px; display: flex; justify-content: center; align-items: center; padding-top: 70px;
+		}
+
+		.button{ font-size: 45px; padding:15px 150px; font-weight: 500;
+				background-color: black; color: white;
+				border: 3px solid white;
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				transition: all 0.4s; }
+
+		.button:focus {outline: none;}
+ 		
+ 		.button:hover{
+ 			background-color: white; color: black; font-weight: 700;
+ 		}
+
+ 		
+
+ 		.first_back{background-color: black; margin: auto;}
+
+ 		.first {width: 1200px; margin: auto; padding-bottom:150px; }
+
+ 		.first h2 { font-size: 60px; color:white;}
+ 		.first p  {font-size: 35px; color: white; margin-top: 20px; }
+ 		.bottom {margin-bottom:250px;}
+
+
+
+ 		.bg-image{background: url('closeeye.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-attachment: fixed;}
+
+		.bg {height: 400px;}
+		.bottom0 {margin-bottom: 0px;}
+
+
+
+		.row {display: flex; width: 1200px;  margin: auto; 
+			margin-bottom:10px}
+		
+		.relative{position: relative; margin-bottom: 0px;}
+		.absolute{display: block; position: absolute;}
+		
+		.col-2{width: 290px; margin: 0px 5px;}
+		.col-3{width: 390px; margin: 0px 5px;}
+		.col-4{width: 590px; margin: 0px 5px;}
+		.col-5{width: 1190px; margin: 0px 5px;}
+
+
+		.folder {background-color: black; color: white; padding-top: 200px;}
+
+		.text { margin-top: 110px;}
+		.textbox {  }
+
+		.folder h2{font-size: 60px; color: white; padding-bottom: 80px;}
+
+		.folder_h{height:380px; padding-bottom: 200px; margin-bottom: 0px; }
+
+		.font1 {font-size: 45px; color: white;}
+
+		.font2 {font-size: 40px; color: white; margin-top: 10px; line-height: 50px;}
+
+		.right {text-align: right; padding-right: 100px;}
+
+		.top {padding-top: 100px;}
+
+
+
+ 		.bg-hand{background: url('hand.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					}
+
+		.bg2 { height: 1900px;}
+
+		.margin {margin: auto; padding-bottom: 0px;}
+
+
+
+		.yellow { height: 1300px;}
+
+		.red {background-color: red;}
+
+
+
+		.dear {font-size: 60px; color: white; padding-bottom: 80px; text-align: center;}
+
+		.button2{ font-size: 28px; padding:35px 70px; font-weight: 500;
+				background-color: black; color: white;
+				border: 3px solid white;
+				text-transform: uppercase;
+				
+				transition: all 0.4s; }
+
+		.button2:focus {outline: none;}
+ 		
+ 		.button2:hover{
+ 			background-color: white; color: black; font-weight: 700;
+ 		}
+
+ 	
+
+
+ 		.left{padding-left: 110px;}
+ 		.right{padding-right: 130px;}
+
+ 		.right2{text-align: left; padding-left: 70px;}
+
+ 		.sul{font-size: 25px; color: white; margin-top: 20px;}
+
+
+ 		.absolute{display: block; position: absolute;}
+
+ 		.sticker1{left: 450px;width:100px;top:-60px; z-index: 33;}
+
+
+
+ 			.big {}
+
+			.big:hover {transform: scale(0.9); transition-timing-function: ease-in-out; animation: 2s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	
+
+
+		
+
+		
+
+
+
+	</style>
+</head>
+<body>
+
+	<header>
+	<nav>
+
+		<div class="logo">
+			
+			<a href="index.html" target="_self">
+				
+				<img src="personal.png" class="logosize">
+
+			</a>
+
+		</div>
+		
+
+		<ul>
+
+			
+			
+			
+			<li>
+				
+				<a href="notice.html" target="_self"> 알림 </a>
+
+			</li>
+
+			<li>
+				
+				<a href="news.html" target="_self"> 뉴스 </a>
+
+			</li>
+
+
+			<li>
+				
+				<a href="mail.html" target="_self"> 메일 </a>
+
+			</li>
+
+			<li>
+				
+				<a href="information.html" target="_self"> 정보 </a>
+
+			</li>
+
+
+
+		</ul>
+
+
+
+
+	</nav>
+
+
+
+	</header>
+
+
+
+
+
+
+	<section class="hall">
+
+		<br>
+		<br>
+		<br> 
+		<br> 
+		
+
+
+		<div class="white key">
+
+		<img src="key.png" class="absolute character3 key_size linear rotate">
+		
+
+		</div>
+
+		<div class="body">
+	
+		<div>
+		<p><button class="button" id="ok">✓    약관 전체동의</button></p>
+		</div>	 
+
+		</div>
+		
+
+	</section>
+
+
+	<section class="first_back">
+
+		<div class="first ">
+			<h2> 개인정보란? </h2>
+			<p class="bottom">살아있는 개인에 관한 정보로서 이름, 주민 등록번호 및 영상등을<br> 통하여 개인을 알아볼 수 있는 정보를 말한다.</p>
+			
+		</div>
+
+
+		<div class="first ">
+			<h2> 무분별한 개인정보 수집 </h2>
+			<p class="bottom">많은 기업들이 대화내용, 위치정보, 휴대전화 고유 식별번호,<br> IP정보, 로르기록 등의 항목을 특별한 설명 없이 <br>필수 수집 데이터로 규정한다. </p>
+			
+		</div>
+		
+
+
+		<div class="first ">
+			<h2> 개인정보제공 인식 </h2>
+			<p class="bottom0">조사 결과, 정보 주체 69.6%는 <br> 개인정보 제공 시 동의서를 제대로 확인하지 않는다. </p>
+			
+		</div>
+		
+
+
+	</section>
+
+	<section class="bg-image bg">
+		
+	</section>
+
+	<section class="folder">
+
+	<div>
+
+		<h2 class="row">기업의 개인정보 침해 사례</h2>
+
+		<div class=" row folder_h">
+			<div class="col-4"><a href="https://www.donga.com/news/article/all/20210428/106662670/1"target="_new"><img src="ruda.png" class="big"></a> </div>
+
+			<div class="col-4 textbox folder_h">
+
+				<div class="text">
+				<p class="font1">[이루다 사건] </p>
+				<p class="font2"> 60만명의 카카오톡 대화문장 <br> 94억여 건 이용<br> 대화에 포함된 개인정보 삭제 X</p>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class=" row folder_h">
+			
+
+			<div class="col-4 textbox folder_h">
+
+				<div class="text right">
+				<p class="font1">[카카오톡 사건] </p>
+				<p class="font2"> 개인정보처리방침에 <br> 이용자 대화내용 수집에 <br>대한 사실 설명 X</p>
+				</div>
+
+			</div>
+
+			<div class="col-4"><a href="http://news.kmib.co.kr/article/view.asp?arcid=0015634360&code=61121111&cp=nv"target="_new"><img src="talk.png"class="big"></a> </div>
+
+		</div>
+
+
+
+		<div class=" row folder_h">
+			<div class="col-4"><a href="https://www.hankyung.com/it/article/202101154742g"target="_new"><img src="map.png"class="big"></a> </div>
+
+			<div class="col-4 textbox folder_h">
+
+				<div class="text">
+				<p class="font1">[카카오맵 사건] </p>
+				<p class="font2"> 이용자 신상정보 <br> 즐겨찾기 전체공개를 통해 노출<br> 제대로된 개인정보 공개 동의 X</p>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+		
+
+
+	</section>
+
+	<section class="first_back top">
+
+		<div class="first">
+			<h2> 개인정보 유출로 인한 피해 </h2>
+			<p >단지 불편하다는 이유로 각종 서비스를 이용할 때 <br> 개인정보의 제공목적과 범위등을 확인하지 않고 <br> 쉽게 개인정보를 제공하는 경우,<br> 바이러스, 악성코드, 피싱메일 등에 무방비하게 노출될 수 있다.</p>
+			
+		</div>
+
+	</section>
+
+	<section class="bg-hand margin bg2 bottom0">
+
+
+
+	
+		<div class="yellow">비우기용</div>
+
+		<h2 class="dear">개인정보 침해 구제방법 </h2>
+
+		<div class="row">
+			<div class="col-4 left"> <a href="https://www.kopico.go.kr/main/main.do"target="_new"><button class="button2">개인정보분쟁조정위원회</button></a></div>
+
+			<div class="col-4 right"><a href="https://privacy.kisa.or.kr/main.do"target="_new"><button class="button2">개인정보침해 신고센터</button></a> </div>
+		</div>
+
+		<div class="row">
+			<div class="col-4 left"> <p class="sul">개인정보 유출 피해 손해배상청구를<br> 위한 개인정보분쟁조정 신청</p></div>
+
+			<div class="relative col-4 right right2 row">
+				<p class="sul">개인정보 침해 관련 피해상담 및<br> 현장조사 등의 종합적인 지원</p> 
+				<div><img src="click.png" class="absolute sticker1"></div>
+			</div>
+		</div>
+
+
+		
+
+
+	</section>
+
+
+
+
+
+	
+
+	<footer class="bg-footer">
+				<div class="relative row3  ">
+					<div class="col-5 margin_top">
+						<p class="align-left"> 이용약관  ㆍ   개인정보처리방침  ㆍ  위치기반서비스이용약관</p>
+
+					</div>
+
+
+					<div class="col-5 margin_top">
+						<p class="align-right margin_right"> © PERSONAL Corporation All Rights Reserved.<br>
+													Website designed by Heji Lim</p>
+
+					</div>
+
+				</div>
+
+
+
+
+	</footer>
+
+
+
+
+
+</body>
+</html>
